@@ -13,14 +13,10 @@ const adminRoutes = require("./router/admin");
 
 const Review = require("./models/review");
 const Resturant = require("./models/resturant");
-const View = require("./models/view");
 
 app.use("/user", userRoutes);
 app.use("/analytics", adminRoutes);
 
-// app.use((req, res) => {
-//   res.sendFile(path.join(__dirname, `Public/${req.url}`));
-// });
 app.use(express.static(path.join(__dirname, "public")));
 
 app.get("/admin", (req, res) => {
