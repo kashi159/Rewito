@@ -11,7 +11,7 @@ window.addEventListener("DOMContentLoaded", async()=>{
       const newRow = createTableRow(restaurant);
       table.appendChild(newRow);
     })
-    console.log(response)
+    // console.log(response)
   }catch(err){
     console.log(err);
   }
@@ -34,7 +34,7 @@ function createTableRow(restaurant) {
 form.addEventListener("submit", onSubmit);
 
 async function onSubmit(e) {
-  e.preventDefault();
+  // e.preventDefault();
   const data = {
     name: nameInput.value,
     location: locationInput.value,
