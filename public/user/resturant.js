@@ -64,8 +64,9 @@ async function onSubmit(e) {
       `http://localhost:3000/user/review/${id}`,
       review
     );
-    console.log(response);
-    showReview(response.data)
+    // console.log(response);
+    showReview(response.data);
+    myReview.value = ''
   } catch (err) {
     console.log(err);
   }
